@@ -50,3 +50,8 @@ if len(defined) > 1:
     for definition in defined:
         print("{}. {}\n".format(print_count, definition))
         print_count += 1
+elif len(defined) == 1:
+    print("1. {}\n".format(defined[0]))
+else:
+    print("{} is not in the dictionary! Please double check your spelling.".format(
+                    word.capitalize()))
